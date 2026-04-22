@@ -1,0 +1,44 @@
+{
+  "left": [
+    {
+      "label": "Home",
+      "href": "https://nextfiadvisors.com/"
+    },
+    {
+      "label": "About",
+      "href": "https://nextfiadvisors.com/why-us",
+      "dropdown": [
+        { "label": "Services", "href": "https://nextfiadvisors.com/services" },
+        { "label": "Why Us", "href": "https://nextfiadvisors.com/why-us" },
+        { "label": "Who We Are", "href": "https://nextfiadvisors.com/why-us#a5dda5cd-6ef1-4dfa-9744-96607446e2aa" },
+        { "label": "Contact", "href": "https://nextfiadvisors.com/contact" }
+      ]
+    },
+    {
+      "label": "Case Studies",
+      "href": "https://nextfiadvisors.com/our-work",
+      "dropdown": [
+        { "label": "FI Tokenization Op Model", "href": "https://nextfiadvisors.com/our-work#9912fcd1-7c07-4139-8ddd-45c2338e2f0d" },
+        { "label": "Stablecoin Payments Model", "href": "https://nextfiadvisors.com/our-work#7e004336-2f95-4b72-8d56-b87358a4880b" },
+        { "label": "Demand for Tokenized RWA", "href": "https://nextfiadvisors.com/our-work#2c21eb02-98d7-4b79-81b7-4a8229d333e9" },
+        { "label": "RWA Distribution Model", "href": "https://nextfiadvisors.com/our-work#f85428d2-23f4-4d77-a598-bc0f5929dc5c" }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "label": "Intelligence",
+      "href": "index.html",
+      "dropdownFromReports": true,
+      "maxItems": 12
+    },
+    {
+      "label": "SFTS",
+      "href": "https://streetsignals.nextfiadvisors.com/"
+    },
+    {
+      "label": "Convergence",
+      "href": "https://thedisplacement.ai/"
+    }
+  ]
+}
