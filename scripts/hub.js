@@ -66,6 +66,12 @@
     const reportImages = Array.from(document.querySelectorAll(".card-media img, .featured-media img"));
 
     reportImages.forEach((img) => {
+      if ((img.getAttribute("src") || "").includes("report-placeholder-thumb.svg")) {
+        img.dataset.fallbackApplied = "true";
+        img.src = PLACEHOLDER_IMAGE;
+        img.classList.add("is-placeholder");
+      }
+
       img.addEventListener("error", () => {
         if (img.dataset.fallbackApplied === "true") {
           return;
