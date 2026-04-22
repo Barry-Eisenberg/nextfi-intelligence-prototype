@@ -221,7 +221,7 @@
   },
   {
     "title": "Context Engineering: How Enterprise Operating Models Impact AI Performance & Output",
-    "summary": "Financial institutions are losing AI performance not due to model gaps but operating model gaps. Context architecture—persistent files, reusable templates, session protocols—determines output quality. Institutions without governed context infrastructure face measurable underperformance and unaccounted model risk.",
+    "summary": "Most financial institutions use AI as a session-by-session tool, leaving performance on the table. The real competitive gap is context architecture—persistent files, governed templates, and session discipline—not model selection or prompt wording.",
     "meta": "April 2026 · AI Strategy · Audience: C-Suite, Strategy, Risk, Technology",
     "topic": "ai-strategy",
     "type": "featured-brief",
