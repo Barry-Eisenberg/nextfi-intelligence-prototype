@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const PLACEHOLDER_IMAGE = "assets/report-covers/Image - no preview - square 2.jpg";
+  const PLACEHOLDER_IMAGE = "assets/report-covers/report-placeholder-thumb.svg";
 
   const cards = Array.from(document.querySelectorAll("#report-cards .card"));
   const topicPills = Array.from(document.querySelectorAll(".topic-pill[data-topic-filter]"));
@@ -66,12 +66,6 @@
     const reportImages = Array.from(document.querySelectorAll(".card-media img, .featured-media img"));
 
     reportImages.forEach((img) => {
-      if ((img.getAttribute("src") || "").includes("report-placeholder-thumb.svg")) {
-        img.dataset.fallbackApplied = "true";
-        img.src = PLACEHOLDER_IMAGE;
-        img.classList.add("is-placeholder");
-      }
-
       img.addEventListener("error", () => {
         if (img.dataset.fallbackApplied === "true") {
           return;
