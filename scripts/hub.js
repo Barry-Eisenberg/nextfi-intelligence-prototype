@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const PLACEHOLDER_IMAGE = "assets/report-covers/report-placeholder-thumb.svg";
+  const PLACEHOLDER_IMAGE = "assets/report-covers/Image - no preview - square 2.jpg";
 
   const cards = Array.from(document.querySelectorAll("#report-cards .card"));
   const topicPills = Array.from(document.querySelectorAll(".topic-pill[data-topic-filter]"));
