@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const PLACEHOLDER_IMAGE = "assets/favicons/apple-touch-icon.png";
+  const PLACEHOLDER_IMAGE = "assets/logos/logo-globe-brand.svg";
 
   const cards = Array.from(document.querySelectorAll("#report-cards .card"));
   const topicPills = Array.from(document.querySelectorAll(".topic-pill[data-topic-filter]"));
