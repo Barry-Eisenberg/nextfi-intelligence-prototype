@@ -246,7 +246,7 @@
   },
   {
     "title": "Inside the Agentic AI Loop",
-    "summary": "A peer-reviewed structural analysis of Anthropic's Claude Code reveals that enterprise agentic AI risk lives not in the core execution loop, but in surrounding subsystems: permission engines, context pipelines, and subagent delegation frameworks that will stress-test model risk frameworks in production.",
+    "summary": "A peer-reviewed structural analysis of Anthropic's Claude Code reveals that the real governance challenges in agentic AI lie not in the core loop, but in surrounding subsystems: permission engines, context pipelines, and subagent delegation frameworks that will stress-test model risk frameworks in production.",
     "meta": "April 2026 · AI Strategy · Audience: C-Suite, Strategy, Risk, Technology",
     "topic": "ai-strategy",
     "type": "featured-brief",
