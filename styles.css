@@ -1021,6 +1021,11 @@ button:focus-visible {
     display: block;
   }
 
+  .topbar.is-mobile-open .nav-right {
+    border-top: 0;
+    padding-top: 0;
+  }
+
   .topbar.is-mobile-open .nav-item {
     width: 100%;
     align-items: stretch;
