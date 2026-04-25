@@ -17,8 +17,19 @@
 
   function setOpenDropdown(nextItem) {
     dropdownItems.forEach((item) => {
-      item.classList.toggle("is-open", item === nextItem);
+      const isOpen = item === nextItem;
+      item.classList.toggle("is-open", isOpen);
+
+      const itemToggle = item.querySelector(":scope > .dropdown-toggle");
+      if (itemToggle) {
+        itemToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      }
     });
+  }
+
+  function toggleDropdown(item) {
+    const isOpen = item.classList.contains("is-open");
+    setOpenDropdown(isOpen ? null : item);
   }
 
   function setMobileMenuState(isOpen) {
@@ -38,6 +49,59 @@
   function isSmallViewport() {
     return mobileBreakpoint.matches;
   }
+
+  function addMobileDropdownToggles() {
+    dropdownItems.forEach((item, index) => {
+      const itemLink = item.querySelector(":scope > a");
+      const itemDropdown = item.querySelector(":scope > .nav-dropdown");
+
+      if (!itemLink || !itemDropdown) {
+        return;
+      }
+
+      if (!itemDropdown.id) {
+        itemDropdown.id = "mobile-submenu-" + (index + 1);
+      }
+
+      let itemToggle = item.querySelector(":scope > .dropdown-toggle");
+
+      if (!itemToggle) {
+        itemToggle = document.createElement("button");
+        itemToggle.type = "button";
+        itemToggle.className = "dropdown-toggle";
+        itemToggle.setAttribute("aria-expanded", "false");
+        itemToggle.setAttribute("aria-controls", itemDropdown.id);
+        itemToggle.setAttribute("aria-label", "Toggle submenu");
+        itemToggle.textContent = "▾";
+        item.insertBefore(itemToggle, itemDropdown);
+      }
+
+      itemToggle.addEventListener("click", (event) => {
+        if (!isSmallViewport()) {
+          return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+        toggleDropdown(item);
+      });
+
+      itemLink.addEventListener("click", (event) => {
+        if (!isSmallViewport()) {
+          return;
+        }
+
+        if (item.classList.contains("is-open")) {
+          return;
+        }
+
+        event.preventDefault();
+        toggleDropdown(item);
+      });
+    });
+  }
+
+  addMobileDropdownToggles();
 
   dropdownItems.forEach((item) => {
     item.addEventListener("pointerenter", () => {
