@@ -160,6 +160,10 @@ a {
   opacity: 0.7;
 }
 
+.dropdown-toggle {
+  display: none;
+}
+
 .nav-dropdown {
   position: absolute;
   top: calc(100% + 8px);
