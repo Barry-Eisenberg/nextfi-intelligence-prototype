@@ -155,7 +155,7 @@ a {
 
 .has-dropdown > a::after {
   content: " ▾";
-  font-size: 9px;
+  font-size: 12px;
   vertical-align: middle;
   opacity: 0.7;
 }
