@@ -943,8 +943,9 @@ button:focus-visible {
 
 @media (max-width: 768px) {
   .topbar {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
+    justify-items: center;
     align-items: center;
     padding: 12px clamp(12px, 3vw, 24px);
   }
@@ -953,8 +954,12 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    grid-column: 2;
+    position: absolute;
+    left: clamp(12px, 3vw, 24px);
+    top: 50%;
+    transform: translateY(-50%);
     grid-row: 1;
+    z-index: 2;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -967,7 +972,7 @@ button:focus-visible {
   }
 
   .brand {
-    justify-content: flex-start;
+    justify-content: center;
     grid-column: 1;
     grid-row: 1;
   }
@@ -988,6 +993,7 @@ button:focus-visible {
     grid-template-rows: auto auto auto;
     row-gap: 10px;
     background: rgba(22, 22, 22, 0.98);
+    align-items: start;
   }
 
   .topbar.is-mobile-open .nav-left,
