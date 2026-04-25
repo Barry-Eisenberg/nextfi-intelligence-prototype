@@ -50,16 +50,20 @@ a {
   align-items: center;
   gap: 12px;
   padding: 20px clamp(16px, 3vw, 48px);
-  background: rgba(22, 22, 22, 0.58);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  background:
+    linear-gradient(180deg, rgba(24, 30, 37, 0.72) 0%, rgba(24, 30, 37, 0.64) 100%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  backdrop-filter: blur(18px) saturate(145%);
+  border-bottom: 1px solid rgba(220, 236, 255, 0.12);
+  box-shadow: 0 12px 24px rgba(4, 10, 18, 0.22);
   transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
 }
 
 .topbar.is-scrolled {
   padding: 10px clamp(16px, 3vw, 48px);
-  background: rgba(22, 22, 22, 0.96);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  background:
+    linear-gradient(180deg, rgba(18, 22, 28, 0.94) 0%, rgba(18, 22, 28, 0.9) 100%);
+  box-shadow: 0 8px 20px rgba(4, 10, 18, 0.34);
 }
 
 .topbar-right {
