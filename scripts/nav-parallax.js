@@ -105,6 +105,10 @@
 
   dropdownItems.forEach((item) => {
     item.addEventListener("pointerenter", () => {
+      if (isSmallViewport()) {
+        return;
+      }
+
       if (closeTimer) {
         window.clearTimeout(closeTimer);
         closeTimer = null;
@@ -113,12 +117,20 @@
     });
 
     item.addEventListener("pointerleave", () => {
+      if (isSmallViewport()) {
+        return;
+      }
+
       closeTimer = window.setTimeout(() => {
         setOpenDropdown(null);
       }, 220);
     });
 
     item.addEventListener("focusin", () => {
+      if (isSmallViewport()) {
+        return;
+      }
+
       if (closeTimer) {
         window.clearTimeout(closeTimer);
         closeTimer = null;
@@ -127,6 +139,10 @@
     });
 
     item.addEventListener("focusout", () => {
+      if (isSmallViewport()) {
+        return;
+      }
+
       window.requestAnimationFrame(() => {
         if (!item.contains(document.activeElement)) {
           setOpenDropdown(null);

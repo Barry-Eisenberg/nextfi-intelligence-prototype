@@ -956,8 +956,8 @@ button:focus-visible {
     justify-content: center;
     position: absolute;
     left: clamp(12px, 3vw, 24px);
-    top: 50%;
-    transform: translateY(-50%);
+    top: 14px;
+    transform: none;
     grid-row: 1;
     z-index: 2;
   }
