@@ -4,6 +4,7 @@
   const header = document.querySelector(".topbar");
   const dropdownItems = Array.from(document.querySelectorAll(".has-dropdown"));
   const mobileToggle = document.querySelector(".mobile-nav-toggle");
+  const mobileToggleLabel = document.querySelector(".mobile-nav-toggle-label");
   const mobileBreakpoint = window.matchMedia("(max-width: 768px)");
 
   if (!header) {
@@ -39,6 +40,10 @@
 
     header.classList.toggle("is-mobile-open", isOpen);
     mobileToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+    if (mobileToggleLabel) {
+      mobileToggleLabel.textContent = isOpen ? "Close" : "Menu";
+    }
   }
 
   function closeMobileMenu() {

@@ -72,14 +72,14 @@ a {
 
 .mobile-nav-toggle {
   display: none;
-  border: 1px solid rgba(247, 247, 247, 0.35);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: rgb(247, 247, 247);
-  padding: 8px 12px;
-  font-size: 0.78rem;
+  padding: 6px 0;
+  font-size: 0.76rem;
   font-weight: 600;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -947,7 +947,8 @@ button:focus-visible {
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-    padding: 12px clamp(12px, 3vw, 24px);
+    min-height: 72px;
+    padding: 12px clamp(16px, 4vw, 22px);
   }
 
   .mobile-nav-toggle {
@@ -955,16 +956,16 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: clamp(12px, 3vw, 24px);
-    top: 14px;
+    left: clamp(16px, 4vw, 22px);
+    top: 18px;
     transform: none;
     grid-row: 1;
     z-index: 2;
+    line-height: 1;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background: rgba(95, 158, 160, 0.22);
-    border-color: rgba(95, 158, 160, 0.85);
+    color: rgb(95, 158, 160);
   }
 
   .nav-left {
@@ -991,9 +992,13 @@ button:focus-visible {
 
   .topbar.is-mobile-open {
     grid-template-rows: auto auto auto;
-    row-gap: 10px;
+    row-gap: 8px;
     background: rgba(22, 22, 22, 0.98);
     align-items: start;
+  }
+
+  .topbar.is-mobile-open .mobile-nav-toggle {
+    top: 18px;
   }
 
   .topbar.is-mobile-open .nav-left,
@@ -1003,7 +1008,7 @@ button:focus-visible {
     align-items: flex-start;
     width: 100%;
     gap: 0;
-    padding: 10px 0;
+    padding: 6px clamp(16px, 4vw, 22px) 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 
@@ -1032,19 +1037,19 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     margin-left: 8px;
-    border: 1px solid rgba(247, 247, 247, 0.25);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.06);
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     color: rgba(247, 247, 247, 0.92);
     cursor: pointer;
+    font-size: 0.95rem;
   }
 
   .topbar.is-mobile-open .has-dropdown.is-open .dropdown-toggle {
-    background: rgba(95, 158, 160, 0.22);
-    border-color: rgba(95, 158, 160, 0.85);
+    color: rgb(95, 158, 160);
   }
 
   .topbar.is-mobile-open .nav-item.has-dropdown > .nav-dropdown {
@@ -1056,8 +1061,9 @@ button:focus-visible {
   .topbar.is-mobile-open .nav-dropdown li a {
     display: block;
     width: 100%;
-    padding: 12px 0;
-    font-size: 0.85rem;
+    padding: 11px 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
@@ -1094,8 +1100,8 @@ button:focus-visible {
 
   .topbar.is-mobile-open .nav-dropdown li a {
     color: rgba(247, 247, 247, 0.86);
-    font-size: 0.8rem;
-    padding-left: 14px;
+    font-size: 0.76rem;
+    padding-left: 18px;
   }
 
   .controls-toolbar {
