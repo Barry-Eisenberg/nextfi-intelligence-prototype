@@ -942,6 +942,29 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
+  .featured {
+    grid-template-columns: 1fr;
+    margin-top: 22px;
+  }
+
+  .featured-copy,
+  .featured-panel {
+    padding: 16px;
+  }
+
+  .featured-media {
+    height: auto;
+    aspect-ratio: auto;
+    max-height: none;
+  }
+
+  .featured-media img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: linear-gradient(145deg, #0b2448 0%, #1f4d86 100%);
+  }
+
   .topbar {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
