@@ -125,8 +125,8 @@ a {
 .nav a {
   text-decoration: none;
   color: rgb(247, 247, 247);
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   letter-spacing: 0.071em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -155,9 +155,9 @@ a {
 
 .has-dropdown > a::after {
   content: " ▾";
-  font-size: 12px;
+  font-size: 15px;
   vertical-align: middle;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .dropdown-toggle {
@@ -201,9 +201,9 @@ a {
   display: block;
   padding: 8px 18px;
   color: rgb(200, 200, 200);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.055em;
   text-transform: none;
   white-space: nowrap;
   transition: color 150ms ease;
