@@ -268,5 +268,32 @@
       "source_label": "Uploaded PDF",
       "pillar": ""
     }
+  },
+  {
+    "title": "The Agentic Architecture, Annotated",
+    "summary": "A layered map of a production Claude agentic AI system across five architectural layers, with six institutional annotations marking where governance, accountability, and model risk decisions must be specified before deployment — not after.",
+    "meta": "2025 · Enterprise Architecture · Audience: C-Suite, Strategy, Risk, Technology",
+    "topic": "enterprise-architecture",
+    "type": "insight-brief",
+    "audience": "c-suite,strategy,risk,technology",
+    "image": "assets/report-covers/the-agentic-architecture-annotated-thumb.png",
+    "image_alt": "Cover of The Agentic Architecture, Annotated",
+    "use_placeholder": true,
+    "href": "",
+    "cta": "Read full brief",
+    "menu_label": "The Agentic Architecture, Annotated",
+    "menu_href": "",
+    "asset_slug": "the-agentic-architecture-annotated",
+    "suggested_thumb_path": "assets/report-covers/the-agentic-architecture-annotated-thumb.png",
+    "suggested_cover_path": "assets/report-covers/the-agentic-architecture-annotated-cover.png",
+    "canonical_markdown": "S U R F A C E L A Y E R C O R E L A Y E R S A F E T Y / A C T I O N L A Y E R B A C K E N D L A Y E R S T A T E L A Y E R · a u d i t & p e r s i s t e n c e s u b s t r a t e Interactive CLI developer entry IDE / Desktop / Browser embedded UI Headless CLI automated runs Agent SDK programmatic UI / Render Agent Loop while-loop: model · tools · repeat \"deceptively simple\" Compaction Pipeline 5 − layer compaction budget · snip · micro · collapse · auto submit output compacted ctx Permission System + auto classifier 7 modes · deny-first eval ML \"yoloClassifier\" Hook Pipeline lifecycle events · 27 types Extensibility plugins & skills Built-in Tools native action surface MCP Tools 8+ transports Subagent Spawning coordinator · workers tool request approval dialog summary-only return Execution Backends local · cloud · remote runtime hosts Shell Sandbox isolated execution External Resources vendor APIs · data sources third-party surface shell cmds tool surface Context Assembly prompt + state composition Runtime State in-memory mutable Session Persistence JSONL transcripts · resume / fork isolated trust domains CLAUDE.md + memory long-term context Sidechain Transcripts subagent records 1 2 3 4 5 6 Source structure: MBZUAI VILA Lab & UCL — \"Dive into Claude Code: The Design Space of Today's and Future AI Agentic Systems\" · Reinterpretation by NextFi Advisors N E X T F I I N S T I T U T I O N A L A N N O T A T I O N S Six points where the architecture meets the institutional surface. Each numbered marker on the diagram corresponds to a specific governance, accountability, or operational concern that financial institutions must specify before production deployment — not after. Drawn directly from the NextFi brief. 1 Permission System + auto classifier S A F E T Y / A C T I O N L AY E R The governance philosophy of the system, not a feature . Deny-first rule evaluation across seven modes, with an ML-based classifier (yoloClassifier) adjudicating tool-use at the per-action level. The classifier is itself a model — subject to model risk governance requirements of its own. 2 Compaction Pipeline C O R E L AY E R Five-layer pipeline managing reliability under long- horizon execution . Critical for workflows that span hours or days. The broader challenge of maintaining coherent task intent and human checkpoints across extended horizons remains architecturally open. 3 Subagent Spawning S A F E T Y / A C T I O N L AY E R Functional delegation works. The accountability trail required for institutional deployment in regulated environments does not yet exist by default. When a primary agent delegates to subagents, the chain must remain legible to operators and supervisors. 4 MCP Tools S A F E T Y / A C T I O N L AY E R MCP appears as one of four core extensibility mechanisms — not an add-on. Procurement and vendor evaluation processes that treat MCP compatibility as a secondary specification are misaligned with the direction of the market. 5 Session Persistence S T A T E L AY E R Sessions are treated as isolated trust domains . When resumed or forked, previously granted permissions are not automatically restored. The system accepts user friction as the cost of preserving a core safety invariant — a principle institutions should internalize. 6 External Resources + Backends B A C K E N D L AY E R The vendor connectivity and operational dependency surface . Local, cloud, and remote execution all touch external resources through this boundary. Where the architecture meets vendor risk — and where institutions must specify dependency controls. T H E A R C H I T E C T U R A L R E A D Per-action safety evaluation, ML-based permission classification, and append-oriented session storage are not technical footnotes — they are governance design decisions. The institutions that specify these decisions before vendor selection will deploy into agentic AI with their model risk frameworks intact. Those that don't will be re- engineering after the fact. Companion to \"Inside the Agentic AI Loop\" · NextFi AI Insights Series nextfiadvisors.com A I I N S I G H T S B R I E F · C O M P A N I O N V I E W I N S I D E T H E A G E N T I C A I L O O P The Agentic Architecture, Annotated A layered map of a production Claude agentic AI system — five architectural layers, with six numbered annotations marking where institutional governance, accountability, and risk concerns must be specified before deployment.",
+    "source_context": {
+      "generated_from": "publish-tab",
+      "category": "AI Insights Brief",
+      "source_label": "Uploaded PDF",
+      "source_count": 0,
+      "source_labels": [],
+      "pillar": ""
+    }
   }
 ]
