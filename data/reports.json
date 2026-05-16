@@ -298,11 +298,11 @@
   },
   {
     "title": "Open Source Agentic AI Architecture",
-    "summary": "A disciplined open source agentic AI architecture delivers 10–80× cost savings versus managed frontier platforms while improving auditability. Five architectural layers plus two cross-cutting bands provide a vendor-neutral, institutionally viable path to production agentic AI.",
+    "summary": "A disciplined open source agentic AI architecture delivers 10–80× lower operating costs than frontier managed platforms, with superior auditability. Five architectural layers and six institutional discipline conditions separate viable open source from aspirational deployments.",
     "meta": "May 2026 · Enterprise Architecture · Audience: C-Suite, Strategy, Technology",
     "topic": "ai-strategy",
     "type": "insight-brief",
-    "audience": "c-suite,strategy,technology,architecture",
+    "audience": "c-suite,strategy,technology,enterprise architecture",
     "image": "assets/report-covers/open-source-agentic-ai-architecture-thumb.png",
     "image_alt": "Cover of Open Source Agentic AI Architecture",
     "use_placeholder": true,
