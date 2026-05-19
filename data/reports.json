@@ -64,7 +64,7 @@
   {
     "title": "The Agentic Architecture, Annotated",
     "summary": "A layered map of a production Claude agentic AI system across five architectural layers, with six institutional annotations marking where governance, accountability, and model risk decisions must be specified before deployment — not after.",
-    "meta": "2026 · Enterprise Architecture · Audience: C-Suite, Strategy, Risk, Technology",
+    "meta": "April 2026 · Enterprise Architecture · Audience: C-Suite, Strategy, Risk, Technology",
     "topic": "enterprise-architecture",
     "type": "explainer",
     "audience": "c-suite,strategy,risk,technology",
