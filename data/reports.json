@@ -386,6 +386,24 @@
     "menu_href": "reports/SEC-Letter%20on%20Tokenized%20Securities_18F-dc69886.pdf"
   },
   {
+    "asset_slug": "LinkedInAnalysis_19Feb2026_v.02",
+    "title": "Growth in Digital Asset Discourse on LinkedIn",
+    "summary": "LinkedIn data reveals a sustained acceleration in digital asset professional content and engagement. This analysis tracks how institutional attention to tokenization, stablecoins, and digital payments has evolved across senior finance and technology audiences.",
+    "meta": "February 2026 · Market Structure · Audience: Strategy, C-Suite",
+    "topic": "market-structure",
+    "topics": [
+      "market-structure"
+    ],
+    "type": "market-note",
+    "audience": "strategy,c-suite",
+    "image": "assets/favicons/apple-touch-icon.png",
+    "image_alt": "Cover of Growth in Digital Asset Discourse on LinkedIn",
+    "href": "reports/LinkedInAnalysis_19Feb2026_v.02.pdf",
+    "cta": "Read full brief",
+    "menu_label": "Growth in Digital Asset Discourse...",
+    "menu_href": "reports/LinkedInAnalysis_19Feb2026_v.02.pdf"
+  },
+  {
     "asset_slug": "Hidden_Plumbing_Stablecoins_19Feb2026",
     "title": "The Hidden Plumbing: How Stablecoins Work",
     "summary": "Stablecoin mechanics — reserve composition, redemption flows, peg maintenance, and on-chain settlement — are poorly understood even by institutional participants. This brief explains the infrastructure layer underpinning dollar-denominated digital payments.",
@@ -403,23 +421,5 @@
     "cta": "Read full brief",
     "menu_label": "The Hidden Plumbing: How Stablecoins...",
     "menu_href": "reports/Hidden_Plumbing_Stablecoins_19Feb2026.pdf"
-  },
-  {
-    "asset_slug": "LinkedInAnalysis_19Feb2026_v.02",
-    "title": "Growth in Digital Asset Discourse on LinkedIn",
-    "summary": "LinkedIn data reveals a sustained acceleration in digital asset professional content and engagement. This analysis tracks how institutional attention to tokenization, stablecoins, and digital payments has evolved across senior finance and technology audiences.",
-    "meta": "February 2026 · Market Structure · Audience: Strategy, C-Suite",
-    "topic": "market-structure",
-    "topics": [
-      "market-structure"
-    ],
-    "type": "market-note",
-    "audience": "strategy,c-suite",
-    "image": "assets/favicons/apple-touch-icon.png",
-    "image_alt": "Cover of Growth in Digital Asset Discourse on LinkedIn",
-    "href": "reports/LinkedInAnalysis_19Feb2026_v.02.pdf",
-    "cta": "Read full brief",
-    "menu_label": "Growth in Digital Asset Discourse...",
-    "menu_href": "reports/LinkedInAnalysis_19Feb2026_v.02.pdf"
   }
 ]
