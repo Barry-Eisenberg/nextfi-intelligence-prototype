@@ -27,10 +27,6 @@
   ],
   "right": [
     {
-      "label": "Intelligence",
-      "href": "index.html"
-    },
-    {
       "label": "SFTS",
       "href": "https://streetsignals.nextfiadvisors.com/"
     },
