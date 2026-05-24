@@ -27,12 +27,14 @@
   ],
   "right": [
     {
-      "label": "SFTS",
-      "href": "https://streetsignals.nextfiadvisors.com/"
-    },
-    {
-      "label": "Convergence",
-      "href": "https://thedisplacement.ai/"
+      "label": "Intelligence & Insights",
+      "href": "index.html",
+      "dropdown": [
+        { "label": "Intelligence/Research Hub", "href": "index.html" },
+        { "label": "Agentic AI Governance", "href": "https://agentic.nextfiadvisors.com/" },
+        { "label": "Signals from the Street", "href": "https://streetsignals.nextfiadvisors.com" },
+        { "label": "Convergence Economy", "href": "https://thedisplacement.ai/" }
+      ]
     }
   ]
 }
