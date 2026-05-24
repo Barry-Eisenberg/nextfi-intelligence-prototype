@@ -28,9 +28,7 @@
   "right": [
     {
       "label": "Intelligence",
-      "href": "index.html",
-      "dropdownFromReports": true,
-      "maxItems": 12
+      "href": "index.html"
     },
     {
       "label": "SFTS",
