@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 80" width="600" height="80">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&amp;display=swap');
   </style>
   <svg x="0" y="0" width="80" height="80" viewBox="0 0 2200 2190" fill="#ffffff" stroke="none">
     <g transform="translate(0,2190) scale(1,-1)">
@@ -8,5 +8,5 @@
     </g>
   </svg>
   <text x="88" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="48" letter-spacing="-1" fill="#ffffff">NextFi</text>
-  <text x="272" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-weight="300" font-size="48" letter-spacing="-1" fill="#ffffff" fill-opacity="0.65">Advisors</text>
+  <text x="272" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="48" letter-spacing="-1" fill="#ffffff">Advisors</text>
 </svg>
