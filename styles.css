@@ -819,7 +819,7 @@ section {
 
 .site-footer {
   margin-top: 64px;
-  background: #161616;
+  background: rgb(26, 46, 74);
   color: rgba(247, 247, 247, 0.76);
   font-size: 0.9rem;
   border-top: 1px solid rgba(95, 158, 160, 0.28);
