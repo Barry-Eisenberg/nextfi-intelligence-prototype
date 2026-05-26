@@ -257,24 +257,6 @@
     "menu_href": "https://img1.wsimg.com/blobby/go/69c98e24-9280-42db-9e35-615f225a71b3/SWIFT%26DTCC_IntelligenceBrief_v.2.pdf"
   },
   {
-    "asset_slug": "ConvergenceEconomy_March2026_Final",
-    "title": "The Convergence Economy",
-    "summary": "AI and programmable settlement infrastructure are compressing two historical cost inputs: cognitive labor and transaction coordination. This creates a persistent structural surplus that is real in the medium term and increasingly contested across value chains.",
-    "meta": "March 2026 · Market Structure · Audience: C-Suite, Strategy, Treasury",
-    "topic": "market-structure",
-    "topics": [
-      "market-structure"
-    ],
-    "type": "deep-dive",
-    "audience": "c-suite,strategy,treasury",
-    "image": "assets/report-covers/the-convergence-economy-thumb.png",
-    "image_alt": "Cover of The Convergence Economy",
-    "href": "https://img1.wsimg.com/blobby/go/69c98e24-9280-42db-9e35-615f225a71b3/ConvergenceEconomy_March2026_Final.pdf",
-    "cta": "Read full brief",
-    "menu_label": "The Convergence Economy",
-    "menu_href": "https://img1.wsimg.com/blobby/go/69c98e24-9280-42db-9e35-615f225a71b3/ConvergenceEconomy_March2026_Final.pdf"
-  },
-  {
     "asset_slug": "Three%20Trends%20One%20Infrastructure%20Stack",
     "title": "Three Trends, One Infrastructure Stack",
     "summary": "Three converging macro trends — AI-driven automation, programmable settlement, and stablecoin proliferation — are merging into a single infrastructure stack. This brief distills the institutional implications from the IMF's structural analysis of digital money convergence.",
