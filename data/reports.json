@@ -207,7 +207,7 @@
     "title": "SWIFT's Shift to Blockchain Infrastructure",
     "summary": "SWIFT's shift from experimentation to production-ready shared ledger infrastructure marks a structural turning point for global finance. The transition reframes adoption timelines for digital assets, tokenized securities, and cross-border settlement.",
     "meta": "March 2026 · Tokenization · Audience: Strategy, Risk, C-Suite",
-    "topic": "tokenization",
+    "topic": "tokenization,market-structure",
     "topics": [
       "tokenization"
     ],
@@ -225,7 +225,7 @@
     "title": "DTCC vs SWIFT: Solving Interoperability",
     "summary": "Two of the most systemically important market infrastructures identify network fragmentation as a core barrier to adoption at scale. This brief compares DTCC and SWIFT approaches to interoperability, standards, and industry coordination.",
     "meta": "March 2026 · Market Structure · Audience: Strategy, Risk, Technology",
-    "topic": "market-structure",
+    "topic": "market-structure,tokenization",
     "topics": [
       "market-structure"
     ],
@@ -261,7 +261,7 @@
     "title": "The Convergence Economy: Repricing of Intelligence and Transactions",
     "summary": "AI and programmable settlement infrastructure are simultaneously compressing cognitive labor and transaction coordination costs, generating an estimated $400B–$1.1T annual surplus. The decisive question is who captures it — and how it reshapes firms, labor share, and industry structure through 2036.",
     "meta": "March 2026 · Market Structure · Audience: C-Suite, Strategy, Risk, Treasury, Technology",
-    "topic": "ai-strategy,market-structure",
+    "topic": "ai-strategy,market-structure,",
     "type": "deep-dive",
     "audience": "c-suite,strategy,risk,technology",
     "image": "assets/report-covers/the-convergence-economy-repricing-of-intelligence-and-transactions-thumb.png",
