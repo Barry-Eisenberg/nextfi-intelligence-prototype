@@ -140,12 +140,29 @@ def update_index(reports, nav):
     for item in nav.get("right", []):
         if item.get("dropdownFromReports"):
             right_rows.append(render_intelligence_dropdown(item, reports))
+        elif item.get("dropdown"):
+            label = esc(item.get("label", ""))
+            href = esc(item.get("href", "#"))
+            dropdown_items = [
+                f'      <li><a href="{esc(child.get("href", "#"))}">{esc(child.get("label", ""))}</a></li>'
+                for child in item["dropdown"]
+            ]
+            right_rows.append("\n".join([
+                '<div class="nav-item has-dropdown">',
+                f'  <a href="{href}">{label}</a>',
+                '  <ul class="nav-dropdown nav-section-links">',
+                *dropdown_items,
+                '  </ul>',
+                '</div>',
+            ]))
         else:
             right_rows.append(f'<a href="{esc(item.get("href", "#"))}">{esc(item.get("label", ""))}</a>')
 
     right_nav = '\n'.join([
-        '<nav class="nav nav-right" aria-label="Primary navigation right">',
+        '<nav id="primary-mobile-nav" class="nav nav-right" aria-label="Primary navigation right">',
         '  ' + '\n  '.join(right_rows),
+        '  <!-- PRIMARY-RIGHT-LINKS-START -->',
+        '<!-- PRIMARY-RIGHT-LINKS-END -->',
         '</nav>',
     ])
 
@@ -159,7 +176,7 @@ def update_index(reports, nav):
         flags=re.S,
     )
     html_text = re.sub(
-        r'<nav class="nav nav-right" aria-label="Primary navigation right">.*?</nav>',
+        r'<nav[^>]*class="nav nav-right"[^>]*aria-label="Primary navigation right"[^>]*>.*?</nav>',
         right_nav,
         html_text,
         count=1,

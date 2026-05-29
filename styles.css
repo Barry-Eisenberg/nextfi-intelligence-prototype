@@ -194,7 +194,7 @@ a {
   transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
 }
 
-.nav-dropdown-right {
+.nav-section-links {
   left: auto;
   right: 0;
 }
@@ -1119,7 +1119,7 @@ button:focus-visible {
   }
 
   .topbar.is-mobile-open .has-dropdown .nav-dropdown,
-  .topbar.is-mobile-open .has-dropdown .nav-dropdown-right {
+  .topbar.is-mobile-open .has-dropdown .nav-section-links {
     position: static;
     left: auto;
     right: auto;
@@ -1137,7 +1137,7 @@ button:focus-visible {
   }
 
   .topbar.is-mobile-open .has-dropdown.is-open .nav-dropdown,
-  .topbar.is-mobile-open .has-dropdown.is-open .nav-dropdown-right {
+  .topbar.is-mobile-open .has-dropdown.is-open .nav-section-links {
     display: block;
   }
 
