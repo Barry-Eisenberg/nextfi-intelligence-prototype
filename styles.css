@@ -1003,6 +1003,7 @@ button:focus-visible {
 
   .topbar {
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     min-height: 72px;
     padding: 12px clamp(16px, 4vw, 22px);
@@ -1014,8 +1015,8 @@ button:focus-visible {
     justify-content: center;
     position: absolute;
     left: clamp(16px, 4vw, 22px);
-    top: 18px;
-    transform: none;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 2;
     line-height: 1;
   }
@@ -1029,7 +1030,14 @@ button:focus-visible {
   }
 
   .brand {
+    margin: 0 auto;
     justify-content: center;
+    padding-inline: 42px;
+  }
+
+  .brand img,
+  .brand svg {
+    height: 34px;
   }
 
   .topbar-right {
@@ -1049,7 +1057,8 @@ button:focus-visible {
   }
 
   .topbar.is-mobile-open .mobile-nav-toggle {
-    top: 18px;
+    top: 42px;
+    transform: none;
   }
 
   .topbar.is-mobile-open .nav-right {
@@ -1189,7 +1198,7 @@ button:focus-visible {
 
   .brand img,
   .brand svg {
-    height: 56px;
+    height: 34px;
     width: auto;
   }
 
@@ -1223,7 +1232,7 @@ button:focus-visible {
 
   .brand img,
   .brand svg {
-    height: 48px;
+    height: 32px;
     width: auto;
   }
 
