@@ -195,14 +195,14 @@ a {
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-  background: #f5f3ec;
+  background: rgba(22, 38, 63, 0.98);
   list-style: none;
   margin: 0;
   padding: 6px;
   min-width: 214px;
   border-radius: 0;
-  border: 1px solid rgba(28, 48, 80, 0.14);
-  box-shadow: 0 16px 36px rgba(28, 48, 80, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 36px rgba(4, 10, 18, 0.36);
   z-index: 100;
   opacity: 0;
   visibility: hidden;
@@ -228,7 +228,7 @@ a {
 .nav-dropdown li a {
   display: block;
   padding: 11px 14px;
-  color: #23272e;
+  color: rgba(247, 247, 247, 0.82);
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
@@ -238,8 +238,8 @@ a {
 }
 
 .nav-dropdown li a:hover {
-  background: #efece2;
-  color: #1c3050;
+  background: rgba(95, 158, 160, 0.14);
+  color: #ffffff;
 }
 
 .kicker {
@@ -837,71 +837,50 @@ section {
 
 .site-footer {
   margin-top: 64px;
-  background: rgb(26, 46, 74);
-  color: rgba(247, 247, 247, 0.76);
+  background: #16263f;
+  color: #ffffff;
   font-size: 0.9rem;
-  border-top: 1px solid rgba(95, 158, 160, 0.28);
 }
 
-.footer-inner {
+.footer-top {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 52px clamp(20px, 4vw, 56px) 40px;
+  padding: 60px clamp(20px, 4vw, 56px) 0;
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr;
+  gap: 44px;
 }
 
 .footer-brand .footer-logo {
-  width: 240px;
+  width: 220px;
   height: auto;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .footer-brand p {
-  margin: 0 0 18px;
-  line-height: 1.6;
+  margin: 0;
+  line-height: 1.65;
   max-width: 32ch;
-  color: rgba(247, 247, 247, 0.72);
-}
-
-.footer-social {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid rgba(247, 247, 247, 0.18);
-  border-radius: 6px;
-  color: rgba(247, 247, 247, 0.8);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  transition: border-color 150ms, color 150ms;
-}
-
-.footer-social:hover {
-  border-color: rgba(95, 158, 160, 0.7);
-  color: rgb(95, 158, 160);
+  color: rgba(255, 255, 255, 0.62);
 }
 
 .footer-links h4 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(247, 247, 247, 0.42);
-  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 0 16px;
 }
 
 .footer-links a {
   display: block;
-  color: rgba(247, 247, 247, 0.76);
+  color: rgba(255, 255, 255, 0.72);
   text-decoration: none;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
+  font-size: 0.88rem;
+  margin-bottom: 11px;
   transition: color 150ms;
 }
 
@@ -910,15 +889,37 @@ section {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-  text-align: center;
-  padding: 18px clamp(20px, 4vw, 56px);
-  font-size: 0.82rem;
-  color: rgba(247, 247, 247, 0.46);
+  max-width: var(--max);
+  margin: 52px auto 0;
+  padding: 22px clamp(20px, 4vw, 56px) 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .footer-bottom p {
   margin: 0;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.82rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.82rem;
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.footer-socials a:hover {
+  color: rgb(95, 158, 160);
 }
 
 a:focus-visible,
@@ -951,7 +952,7 @@ button:focus-visible {
     gap: 16px;
   }
 
-  .footer-inner {
+  .footer-top {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1033,8 +1034,6 @@ button:focus-visible {
     display: none;
     width: 100%;
     justify-content: flex-start;
-    grid-column: 1 / -1;
-    grid-row: 3;
   }
 
   .nav-right {
@@ -1105,6 +1104,21 @@ button:focus-visible {
     font-size: 0.8rem;
     letter-spacing: 0.1em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 44px;
+  }
+
+  .footer-bottom {
+    margin-top: 34px;
+    padding-bottom: 24px;
+  }
+
+  .footer-socials {
+    gap: 14px;
   }
 
   .topbar.is-mobile-open .has-dropdown::after {
@@ -1181,7 +1195,7 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .footer-inner {
+  .footer-top {
     grid-template-columns: 1fr;
     gap: 28px;
   }
