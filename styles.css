@@ -275,10 +275,8 @@ h1 {
 .page-hero {
   margin-top: 24px;
   min-height: 305px;
-  display: grid;
-  grid-template-columns: 1.45fr 0.55fr;
-  gap: clamp(14px, 2.2vw, 26px);
-  align-items: center;
+  position: relative;
+  display: block;
   padding: 22px clamp(18px, 3.2vw, 36px);
   border: 1px solid #c9d7e9;
   border-radius: 12px;
@@ -289,19 +287,29 @@ h1 {
 }
 
 .hero-copy {
+  position: relative;
+  z-index: 2;
   min-width: 0;
-  max-width: 100%;
+  max-width: min(76ch, 100%);
+  padding-right: clamp(80px, 14vw, 280px);
 }
 
 .hero-visual {
+  position: absolute;
+  right: clamp(24px, 3.2vw, 56px);
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  opacity: 0.38;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .globe-stage {
   position: relative;
-  width: min(300px, 95%);
+  width: min(360px, 36vw);
   aspect-ratio: 1;
   display: grid;
   place-items: center;
@@ -385,7 +393,7 @@ h1 {
 .page-hero h1 {
   color: #ffffff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.32);
-  max-width: 24ch;
+  max-width: 28ch;
 }
 
 .page-hero .lead {
@@ -394,12 +402,20 @@ h1 {
 
 @media (max-width: 900px) {
   .page-hero {
-    grid-template-columns: 1fr;
-    gap: 24px;
+    min-height: 0;
   }
 
   .hero-copy {
     max-width: 100%;
+    padding-right: 0;
+  }
+
+  .hero-visual {
+    position: static;
+    transform: none;
+    opacity: 1;
+    margin-top: 18px;
+    pointer-events: auto;
   }
 
   .globe-stage {
