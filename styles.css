@@ -276,8 +276,8 @@ h1 {
   margin-top: 24px;
   min-height: 305px;
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: clamp(22px, 3.6vw, 44px);
+  grid-template-columns: 1.45fr 0.55fr;
+  gap: clamp(14px, 2.2vw, 26px);
   align-items: center;
   padding: 22px clamp(18px, 3.2vw, 36px);
   border: 1px solid #c9d7e9;
@@ -290,18 +290,18 @@ h1 {
 
 .hero-copy {
   min-width: 0;
-  max-width: 64ch;
+  max-width: 100%;
 }
 
 .hero-visual {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .globe-stage {
   position: relative;
-  width: min(320px, 100%);
+  width: min(300px, 95%);
   aspect-ratio: 1;
   display: grid;
   place-items: center;
@@ -385,7 +385,7 @@ h1 {
 .page-hero h1 {
   color: #ffffff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.32);
-  max-width: 20ch;
+  max-width: 24ch;
 }
 
 .page-hero .lead {
