@@ -845,17 +845,18 @@ section {
 .footer-top {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 60px clamp(20px, 4vw, 56px) 0;
+  padding: 58px clamp(20px, 4vw, 56px) 0;
   display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr 1fr;
-  gap: 44px;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr 1fr;
+  gap: 38px;
+  align-items: start;
 }
 
 .footer-brand .footer-logo {
-  width: 220px;
+  width: 200px;
   height: auto;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .footer-brand p {
@@ -879,7 +880,7 @@ section {
   display: block;
   color: rgba(255, 255, 255, 0.72);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   margin-bottom: 11px;
   transition: color 150ms;
 }
@@ -954,6 +955,7 @@ button:focus-visible {
 
   .footer-top {
     grid-template-columns: 1fr 1fr;
+    gap: 34px;
   }
 
   .footer-brand {
