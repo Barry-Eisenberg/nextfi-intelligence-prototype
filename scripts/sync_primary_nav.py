@@ -24,8 +24,14 @@ def build_nav_item(item: dict) -> str:
     label = html.escape(item["label"])
     href = html.escape(item["href"], quote=True)
     dropdown = item.get("dropdown")
+    cta = item.get("cta", False)
+    dropdown_right = item.get("dropdownRight", False)
+
     if not dropdown:
-        return f'  <a href="{href}">{label}</a>'
+        cls = ' class="nav-cta"' if cta else ""
+        return f'  <a{cls} href="{href}">{label}</a>'
+
+    dropdown_cls = 'nav-dropdown nav-section-links' if dropdown_right else 'nav-dropdown'
     items_html = "\n".join(
         f'      <li><a href="{html.escape(d["href"], quote=True)}">{html.escape(d["label"])}</a></li>'
         for d in dropdown
@@ -33,7 +39,7 @@ def build_nav_item(item: dict) -> str:
     return (
         '        <div class="nav-item has-dropdown">\n'
         f'  <a href="{href}">{label}</a>\n'
-        '  <ul class="nav-dropdown">\n'
+        f'  <ul class="{dropdown_cls}">\n'
         f'{items_html}\n'
         '  </ul>\n'
         '</div>'
@@ -42,9 +48,11 @@ def build_nav_item(item: dict) -> str:
 
 def build_left_nav(nav: dict) -> str:
     items_html = "\n".join(build_nav_item(item) for item in nav["left"])
+    right_block = f"{RIGHT_START}\n\n{RIGHT_END}"
     return (
-        '      <nav class="nav nav-left" aria-label="Primary navigation left">\n'
+        '      <nav id="primary-mobile-nav" class="nav nav-right" aria-label="Primary navigation">\n'
         f'{items_html}\n'
+        f'  {right_block}\n'
         '</nav>'
     )
 
@@ -68,8 +76,6 @@ def main() -> int:
 
     index_html = INDEX_PATH.read_text(encoding="utf-8")
     updated = replace_region(index_html, LEFT_START, LEFT_END, left_nav)
-    # RIGHT_START/RIGHT_END region is reserved for additional links; leave empty.
-    updated = replace_region(updated, RIGHT_START, RIGHT_END, "")
 
     if updated != index_html:
         INDEX_PATH.write_text(updated, encoding="utf-8")

@@ -45,8 +45,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
   gap: 12px;
   padding: 20px clamp(16px, 3vw, 48px);
@@ -139,6 +138,17 @@ a {
 
 .nav a:hover {
   color: rgb(95, 158, 160);
+}
+
+.nav a.nav-cta {
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  padding: 5px 14px;
+}
+
+.nav a.nav-cta:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgb(247, 247, 247);
 }
 
 .nav-sep {
@@ -981,9 +991,7 @@ button:focus-visible {
   }
 
   .topbar {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
+    flex-wrap: wrap;
     align-items: center;
     min-height: 72px;
     padding: 12px clamp(16px, 4vw, 22px);
@@ -997,7 +1005,6 @@ button:focus-visible {
     left: clamp(16px, 4vw, 22px);
     top: 18px;
     transform: none;
-    grid-row: 1;
     z-index: 2;
     line-height: 1;
   }
@@ -1011,9 +1018,8 @@ button:focus-visible {
   }
 
   .brand {
+    flex: 1;
     justify-content: center;
-    grid-column: 1;
-    grid-row: 1;
   }
 
   .topbar-right {
@@ -1029,7 +1035,6 @@ button:focus-visible {
   }
 
   .topbar.is-mobile-open {
-    grid-template-rows: auto auto auto;
     row-gap: 8px;
     background: rgba(22, 22, 22, 0.98);
     align-items: start;
@@ -1039,7 +1044,6 @@ button:focus-visible {
     top: 18px;
   }
 
-  .topbar.is-mobile-open .nav-left,
   .topbar.is-mobile-open .nav-right {
     display: flex;
     flex-direction: column;
@@ -1048,20 +1052,6 @@ button:focus-visible {
     gap: 0;
     padding: 6px clamp(16px, 4vw, 22px) 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
-  }
-
-  .topbar.is-mobile-open .nav-left {
-    grid-column: 1 / -1;
-    grid-row: 2;
-  }
-
-  .topbar.is-mobile-open .topbar-right {
-    display: block;
-  }
-
-  .topbar.is-mobile-open .nav-right {
-    border-top: 0;
-    padding-top: 0;
   }
 
   .topbar.is-mobile-open .nav-item {

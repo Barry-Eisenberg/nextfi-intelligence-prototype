@@ -13,18 +13,9 @@
       ]
     },
     {
-      "label": "About",
-      "href": "https://nextfiadvisors.com/#about"
-    },
-    {
-      "label": "Contact",
-      "href": "https://nextfiadvisors.com/#contact"
-    }
-  ],
-  "right": [
-    {
       "label": "Intelligence & Insights",
       "href": "index.html",
+      "dropdownRight": true,
       "dropdown": [
         { "label": "Overview", "href": "https://nextfiadvisors.com/#intelligence" },
         { "label": "Intelligence/Research Hub", "href": "index.html" },
@@ -32,6 +23,15 @@
         { "label": "Signals from the Street", "href": "https://streetsignals.nextfiadvisors.com" },
         { "label": "Convergence Economy", "href": "https://thedisplacement.ai/" }
       ]
+    },
+    {
+      "label": "About",
+      "href": "https://nextfiadvisors.com/#about"
+    },
+    {
+      "label": "Contact",
+      "href": "https://nextfiadvisors.com/#contact",
+      "cta": true
     }
   ]
 }
