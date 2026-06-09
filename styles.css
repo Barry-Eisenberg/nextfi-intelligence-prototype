@@ -290,13 +290,13 @@ h1 {
   position: relative;
   z-index: 2;
   min-width: 0;
-  max-width: min(76ch, 100%);
-  padding-right: clamp(36px, 7vw, 140px);
+  max-width: min(104ch, 100%);
+  padding-right: clamp(10px, 2.4vw, 48px);
 }
 
 .hero-visual {
   position: absolute;
-  right: clamp(-140px, -9vw, -72px);
+  right: clamp(56px, 9vw, 180px);
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -309,7 +309,7 @@ h1 {
 
 .globe-stage {
   position: relative;
-  width: clamp(440px, 44vw, 620px);
+  width: clamp(420px, 40vw, 560px);
   aspect-ratio: 1;
   display: grid;
   place-items: center;
@@ -393,7 +393,7 @@ h1 {
 .page-hero h1 {
   color: #ffffff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.32);
-  max-width: 34ch;
+  max-width: 46ch;
 }
 
 .page-hero .lead {
