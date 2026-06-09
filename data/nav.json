@@ -1,28 +1,24 @@
 {
   "left": [
     {
-      "label": "Home",
-      "href": "https://nextfiadvisors.com/"
+      "label": "Services",
+      "href": "https://nextfiadvisors.com/#services"
+    },
+    {
+      "label": "Our Work",
+      "href": "https://nextfiadvisors.com/our-work",
+      "dropdown": [
+        { "label": "Overview", "href": "https://nextfiadvisors.com/#work" },
+        { "label": "Selected Case Studies", "href": "https://nextfiadvisors.com/our-work" }
+      ]
     },
     {
       "label": "About",
-      "href": "https://nextfiadvisors.com/why-us",
-      "dropdown": [
-        { "label": "Services", "href": "https://nextfiadvisors.com/services" },
-        { "label": "Why Us", "href": "https://nextfiadvisors.com/why-us" },
-        { "label": "Who We Are", "href": "https://nextfiadvisors.com/why-us#a5dda5cd-6ef1-4dfa-9744-96607446e2aa" },
-        { "label": "Contact", "href": "https://nextfiadvisors.com/contact" }
-      ]
+      "href": "https://nextfiadvisors.com/#about"
     },
     {
-      "label": "Case Studies",
-      "href": "https://nextfiadvisors.com/our-work",
-      "dropdown": [
-        { "label": "FI Tokenization Op Model", "href": "https://nextfiadvisors.com/our-work#9912fcd1-7c07-4139-8ddd-45c2338e2f0d" },
-        { "label": "Stablecoin Payments Model", "href": "https://nextfiadvisors.com/our-work#7e004336-2f95-4b72-8d56-b87358a4880b" },
-        { "label": "Demand for Tokenized RWA", "href": "https://nextfiadvisors.com/our-work#2c21eb02-98d7-4b79-81b7-4a8229d333e9" },
-        { "label": "RWA Distribution Model", "href": "https://nextfiadvisors.com/our-work#f85428d2-23f4-4d77-a598-bc0f5929dc5c" }
-      ]
+      "label": "Contact",
+      "href": "https://nextfiadvisors.com/#contact"
     }
   ],
   "right": [
@@ -30,8 +26,9 @@
       "label": "Intelligence & Insights",
       "href": "index.html",
       "dropdown": [
+        { "label": "Overview", "href": "https://nextfiadvisors.com/#intelligence" },
         { "label": "Intelligence/Research Hub", "href": "index.html" },
-        { "label": "Agentic AI Governance", "href": "https://agentic.nextfiadvisors.com/" },
+        { "label": "Agentic AI Governance Review", "href": "https://agentic.nextfiadvisors.com/" },
         { "label": "Signals from the Street", "href": "https://streetsignals.nextfiadvisors.com" },
         { "label": "Convergence Economy", "href": "https://thedisplacement.ai/" }
       ]
