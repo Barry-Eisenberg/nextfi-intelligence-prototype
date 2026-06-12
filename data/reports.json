@@ -463,7 +463,7 @@
     "summary": "BIS Working Paper No. 1359 finds that nearly 60% of stablecoin transfer events occur inside complex DeFi transaction bundles, not standalone payments. USDT, USDC, and PYUSD show distinct functional profiles, undermining interchangeability assumptions in policy and market analysis.",
     "meta": "June 2026 · Tokenization · Audience: C-Suite, Strategy, Risk, Treasury",
     "topic": "market-structure,tokenization",
-    "type": "market-note",
+    "type": "featured-brief",
     "audience": "c-suite,strategy,risk,treasury",
     "image": "assets/report-covers/the-anatomy-of-stablecoin-transactions-thumb.png",
     "image_alt": "Cover of The Anatomy of Stablecoin Transactions",
