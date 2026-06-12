@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Library homepage -->
   <url>
     <loc>https://intelligence.nextfiadvisors.com/</loc>
     <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- HTML report pages -->
   <url>
     <loc>https://intelligence.nextfiadvisors.com/reports/lessons-enterprise-ai-deployments.html</loc>
     <lastmod>2026-06-12</lastmod>
@@ -42,4 +46,109 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- PDF reports -->
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/anatomy-of-stablecoin-transactions.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/when-private-funds-meet-programmable-liquidity.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/open-source-agentic-ai-architecture.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/the-agentic-architecture-annotated.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/inside-the-agentic-ai-loop.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/context-engineering-how-enterprise-operating-models-impact-ai-performance-and-ou.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/x402-protocol-the-payment-infrastructure-for-agentic-ai.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/Three%20Trends%20One%20Infrastructure%20Stack.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/the-convergence-economy-repricing-of-intelligence-and-transactions.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/convergence_carousel_light.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/LeveragingAI-A%20StrategicAdvantage_18Feb2026.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/SWIFT%26DTCC_IntelligenceBrief_v.2.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/BEGA_PrivateCreditRWA_Brief_24Feb26_v2.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/BEGA_StablecoinsCross-Border%20Payments_24Feb2026.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/SEC-Letter%20on%20Tokenized%20Securities_18F-dc69886.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/Hidden_Plumbing_Stablecoins_19Feb2026.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://intelligence.nextfiadvisors.com/reports/LinkedInAnalysis_19Feb2026_v.02.pdf</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
