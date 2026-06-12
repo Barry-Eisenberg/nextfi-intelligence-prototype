@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://intelligence.nextfiadvisors.com/sitemap.xml
