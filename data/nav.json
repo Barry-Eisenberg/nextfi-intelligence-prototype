@@ -1,6 +1,10 @@
 {
   "left": [
     {
+      "label": "Expertise",
+      "href": "https://nextfiadvisors.com/#expertise"
+    },
+    {
       "label": "Services",
       "href": "https://nextfiadvisors.com/#services"
     },
