@@ -495,10 +495,10 @@
     "image": "assets/report-covers/meet-herman-thumb.png",
     "image_alt": "Cover of Meet Herman",
     "use_placeholder": true,
-    "href": "",
+    "href": "nextfiadvisors.com/meet-herman/",
     "cta": "Read full brief",
     "menu_label": "Meet Herman",
-    "menu_href": "",
+    "menu_href": "nextfiadvisors.com/meet-herman/",
     "asset_slug": "meet-herman",
     "suggested_thumb_path": "assets/report-covers/meet-herman-thumb.png",
     "suggested_cover_path": "assets/report-covers/meet-herman-cover.png",
@@ -506,7 +506,7 @@
     "source_context": {
       "generated_from": "publish-tab",
       "category": "AI Insights Brief",
-      "source_label": "Uploaded PDF",
+      "source_label": "",
       "source_count": 0,
       "source_labels": [],
       "pillar": ""
