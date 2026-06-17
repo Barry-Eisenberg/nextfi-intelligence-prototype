@@ -1,10 +1,37 @@
 [
   {
+    "title": "Meet Herman",
+    "summary": "A technical deep-dive into Herman, NextFi's Hermes-based autonomous AI assistant. The interactive architecture diagram maps a six-layer agentic architecture spanning reasoning loops, 30+ skills, data integrations, and persistent memory — all scoped to a single human-in-the-loop operator.",
+    "meta": "June 2026 · AI Strategy · Audience: Strategy",
+    "topic": "ai-strategy,market-structure",
+    "type": "featured-brief",
+    "audience": "strategy",
+    "image": "",
+    "image_alt": "Cover of Meet Herman",
+    "use_placeholder": true,
+    "href": "https://nextfiadvisors.com/meet-herman/",
+    "cta": "Visit Interactive App",
+    "menu_label": "Meet Herman",
+    "menu_href": "https://nextfiadvisors.com/meet-herman/",
+    "asset_slug": "meet-herman",
+    "suggested_thumb_path": "assets/report-covers/meet-herman-thumb.png",
+    "suggested_cover_path": "assets/report-covers/meet-herman-cover.png",
+    "canonical_markdown": "",
+    "source_context": {
+      "generated_from": "publish-tab",
+      "category": "AI Insights Brief",
+      "source_label": "External Link",
+      "source_count": 0,
+      "source_labels": [],
+      "pillar": ""
+    }
+  },
+  {
     "title": "Anatomy of Stablecoin Transactions",
     "summary": "BIS Working Paper No. 1359 finds that nearly 60% of stablecoin transfer events occur inside complex DeFi transaction bundles, not standalone payments. USDT and USDC function as DeFi settlement primitives while PYUSD operates as a retail payment rail—making the three tokens functionally non-interchangeable.",
     "meta": "June 2026 · Tokenization · Audience: C-Suite, Strategy, Risk, Treasury, Technology",
     "topic": "market-structure,tokenization",
-    "type": "featured-brief",
+    "type": "insight-brief",
     "audience": "c-suite,strategy,risk,treasury,technology",
     "image": "assets/report-covers/anatomy-of-stablecoin-transactions-thumb.png",
     "image_alt": "Cover of Anatomy of Stablecoin Transactions",
@@ -484,32 +511,5 @@
     "cta": "Read full brief",
     "menu_label": "Growth in Digital Asset Discourse...",
     "menu_href": "reports/LinkedInAnalysis_19Feb2026_v.02.pdf"
-  },
-  {
-    "title": "Meet Herman",
-    "summary": "A technical deep-dive into Herman, NextFi's Hermes-based autonomous AI assistant. The interactive architecture diagram maps a six-layer agentic architecture spanning reasoning loops, 30+ skills, data integrations, and persistent memory — all scoped to a single human-in-the-loop operator.",
-    "meta": "June 2026 · AI Strategy · Audience: Strategy",
-    "topic": "ai-strategy,market-structure",
-    "type": "featured-brief",
-    "audience": "strategy",
-    "image": "",
-    "image_alt": "Cover of Meet Herman",
-    "use_placeholder": true,
-    "href": "https://nextfiadvisors.com/meet-herman/",
-    "cta": "Visit Interactive App",
-    "menu_label": "Meet Herman",
-    "menu_href": "https://nextfiadvisors.com/meet-herman/",
-    "asset_slug": "meet-herman",
-    "suggested_thumb_path": "assets/report-covers/meet-herman-thumb.png",
-    "suggested_cover_path": "assets/report-covers/meet-herman-cover.png",
-    "canonical_markdown": "",
-    "source_context": {
-      "generated_from": "publish-tab",
-      "category": "AI Insights Brief",
-      "source_label": "External Link",
-      "source_count": 0,
-      "source_labels": [],
-      "pillar": ""
-    }
   }
 ]
