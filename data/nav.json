@@ -1,31 +1,32 @@
 {
   "left": [
     {
-      "label": "Expertise",
-      "href": "https://nextfiadvisors.com/#expertise"
-    },
-    {
-      "label": "Services",
-      "href": "https://nextfiadvisors.com/#services"
-    },
-    {
       "label": "Our Work",
       "href": "https://nextfiadvisors.com/our-work",
       "dropdown": [
-        { "label": "Overview", "href": "https://nextfiadvisors.com/#work" },
-        { "label": "Selected Case Studies", "href": "https://nextfiadvisors.com/our-work" }
+        { "label": "Areas of Expertise", "href": "https://nextfiadvisors.com/#expertise" },
+        { "label": "Case Studies", "href": "https://nextfiadvisors.com/our-work" }
       ]
     },
     {
-      "label": "Intelligence & Insights",
+      "label": "Services",
+      "href": "https://nextfiadvisors.com/#services",
+      "dropdown": [
+        { "label": "Operating Model Strategy & Design", "href": "https://nextfiadvisors.com/#svc-01" },
+        { "label": "Financial Markets Infrastructure", "href": "https://nextfiadvisors.com/#svc-02" },
+        { "label": "Digital Assets & DeFi Technology", "href": "https://nextfiadvisors.com/#svc-03" },
+        { "label": "Program Leadership & Execution", "href": "https://nextfiadvisors.com/#svc-04" }
+      ]
+    },
+    {
+      "label": "Insights",
       "href": "index.html",
       "dropdownRight": true,
       "dropdown": [
-        { "label": "Overview", "href": "https://nextfiadvisors.com/#intelligence" },
-        { "label": "Intelligence/Research Hub", "href": "index.html" },
+        { "label": "NextFi Intelligence", "href": "index.html" },
         { "label": "Agentic AI Governance Review", "href": "https://agentic.nextfiadvisors.com/" },
         { "label": "Signals from the Street", "href": "https://streetsignals.nextfiadvisors.com" },
-        { "label": "Convergence Economy", "href": "https://thedisplacement.ai/" }
+        { "label": "Meet Herman", "href": "https://nextfiadvisors.com/meet-herman/" }
       ]
     },
     {
