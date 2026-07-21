@@ -29,6 +29,26 @@
       .filter(Boolean);
   }
 
+  function setActivePill(topic) {
+    topicPills.forEach((pill) => {
+      const isActive = normalize(pill.dataset.topicFilter) === topic;
+      pill.classList.toggle("active", isActive);
+      pill.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  }
+
+  function resolveInitialTopic() {
+    const params = new URLSearchParams(window.location.search);
+    const requestedTopic = normalize(params.get("topic"));
+    const availableTopics = new Set(topicPills.map((pill) => normalize(pill.dataset.topicFilter)));
+
+    if (requestedTopic && availableTopics.has(requestedTopic)) {
+      return requestedTopic;
+    }
+
+    return "all";
+  }
+
   function matchesCriteria(item) {
     const query = normalize(searchInput.value);
     const topics = parseCsv(item.dataset.topic);
@@ -88,14 +108,8 @@
 
   topicPills.forEach((pill) => {
     pill.addEventListener("click", () => {
-      topicPills.forEach((item) => {
-        item.classList.remove("active");
-        item.setAttribute("aria-pressed", "false");
-      });
-
-      pill.classList.add("active");
-      pill.setAttribute("aria-pressed", "true");
-      activeTopic = pill.dataset.topicFilter || "all";
+      activeTopic = normalize(pill.dataset.topicFilter) || "all";
+      setActivePill(activeTopic);
       updateResults();
     });
   });
@@ -107,6 +121,8 @@
     updateResults();
   });
 
+  activeTopic = resolveInitialTopic();
+  setActivePill(activeTopic);
   applyImageFallbacks();
   updateResults();
 })();
