@@ -4,13 +4,13 @@
       "label": "Expertise",
       "href": "https://nextfiadvisors.com/#work",
       "dropdown": [
-        { "label": "Areas of Expertise", "href": "https://nextfiadvisors.com/#expertise" },
+        { "label": "Domain Areas", "href": "https://nextfiadvisors.com/#expertise" },
         { "label": "Our Work", "href": "https://nextfiadvisors.com/#work" },
         { "label": "Case Studies", "href": "https://nextfiadvisors.com/our-work" }
       ]
     },
     {
-      "label": "What We Do",
+      "label": "Services",
       "href": "https://nextfiadvisors.com/#services",
       "dropdown": [
         { "label": "Operating Model Strategy & Design", "href": "https://nextfiadvisors.com/#svc-01" },
