@@ -344,7 +344,7 @@
     "title": "SWIFT's Shift to Blockchain Infrastructure",
     "summary": "SWIFT's shift from experimentation to production-ready shared ledger infrastructure marks a structural turning point for global finance. The transition reframes adoption timelines for digital assets, tokenized securities, and cross-border settlement.",
     "meta": "March 2026 · Tokenization · Audience: Strategy, Risk, C-Suite",
-    "topic": "tokenization,market-structure",
+    "topic": "tokenization,market-structure,enterprise-architecture",
     "topics": [
       "tokenization"
     ],
@@ -481,7 +481,7 @@
     "title": "Private Credit Tokenization: The Next Frontier in Real World Assets",
     "summary": "The private credit market — now exceeding $2.5 trillion globally — stands at an inflection point. Tokenization is rapidly emerging as a credible infrastructure play for alternative assets, with Hamilton Lane, Invesco, and BlackRock leading the charge.",
     "meta": "February 2026 · Tokenization · Audience: Strategy, Risk, Treasury",
-    "topic": "tokenization",
+    "topic": "tokenization,enterprise-architecture",
     "topics": [
       "tokenization"
     ],
