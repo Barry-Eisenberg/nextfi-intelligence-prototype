@@ -14,7 +14,7 @@
       "href": "https://nextfiadvisors.com/#services",
       "dropdown": [
         { "label": "Operating Model Strategy & Design", "href": "https://nextfiadvisors.com/#svc-01" },
-        { "label": "Financial Markets Infrastructure", "href": "https://nextfiadvisors.com/#svc-02" },
+        { "label": "Enterprise Infrastructure", "href": "https://nextfiadvisors.com/#svc-02" },
         { "label": "Digital Assets & DeFi Technology", "href": "https://nextfiadvisors.com/#svc-03" },
         { "label": "Program Leadership & Execution", "href": "https://nextfiadvisors.com/#svc-04" }
       ]
