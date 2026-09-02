@@ -4,7 +4,8 @@
       "label": "Expertise",
       "href": "https://nextfiadvisors.com/#work",
       "dropdown": [
-        { "label": "Domain Areas", "href": "https://nextfiadvisors.com/#expertise" },
+        { "label": "Artificial Intelligence", "href": "https://nextfiadvisors.com/#expertise" },
+        { "label": "Digital Assets & Tokenization", "href": "https://nextfiadvisors.com/#expertise" },
         { "label": "Our Work", "href": "https://nextfiadvisors.com/#work" },
         { "label": "Case Studies", "href": "https://nextfiadvisors.com/our-work" }
       ]
@@ -20,14 +21,22 @@
       ]
     },
     {
+      "label": "Platforms",
+      "href": "https://nextfiadvisors.com/",
+      "dropdown": [
+        { "label": "Agentic AI Governance Review", "href": "https://agentic.nextfiadvisors.com/" },
+        { "label": "Programmable Liquidity", "href": "https://nextfiadvisors.com/programmable-liquidity" },
+        { "label": "Meet Herman", "href": "https://nextfiadvisors.com/meet-herman/" }
+      ]
+    },
+    {
       "label": "Insights",
       "href": "index.html",
       "dropdownRight": true,
       "dropdown": [
         { "label": "NextFi Intelligence", "href": "index.html" },
-        { "label": "Agentic AI Governance Review", "href": "https://agentic.nextfiadvisors.com/" },
         { "label": "Signals from the Street", "href": "https://streetsignals.nextfiadvisors.com" },
-        { "label": "Meet Herman", "href": "https://nextfiadvisors.com/meet-herman/" }
+        { "label": "Convergence Economy", "href": "https://thedisplacement.ai/" }
       ]
     },
     {
