@@ -15,6 +15,26 @@ LEFT_END = "<!-- PRIMARY-NAV-LEFT-END -->"
 RIGHT_START = "<!-- PRIMARY-RIGHT-LINKS-START -->"
 RIGHT_END = "<!-- PRIMARY-RIGHT-LINKS-END -->"
 
+REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
+
+# Google Analytics. Injected at build time so a newly authored report is tagged
+# without anyone having to remember to paste the snippet into its <head>.
+GA_MEASUREMENT_ID = "G-J8Z8PKZL3N"
+GA_SNIPPET = """
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={id}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+
+  gtag('config', '{id}');
+</script>
+""".format(id=GA_MEASUREMENT_ID)
+
+CHARSET_RE = re.compile(r"<meta[^>]*charset=[^>]*>", re.I)
+HEAD_RE = re.compile(r"<head\b[^>]*>", re.I)
+
 
 def load_nav() -> dict:
     return json.loads(NAV_JSON_PATH.read_text(encoding="utf-8"))
@@ -66,7 +86,48 @@ def replace_region(document: str, start_marker: str, end_marker: str, replacemen
     return updated
 
 
+def ensure_ga_tag(path: Path) -> bool:
+    """Add the gtag snippet to path's <head> unless it is already there.
+
+    Idempotent, so it is safe to run on every build. The snippet goes after
+    <meta charset> when there is one, keeping the charset declaration first.
+    """
+    with path.open("r", encoding="utf-8", newline="") as fh:
+        document = fh.read()
+
+    if GA_MEASUREMENT_ID in document:
+        return False
+
+    head = document[:4000]
+    anchor = CHARSET_RE.search(head) or HEAD_RE.search(head)
+    if anchor is None:
+        print(f"[sync_primary_nav] No <head> anchor in {path.name}; GA tag skipped.")
+        return False
+
+    snippet = GA_SNIPPET.replace("\n", "\r\n") if "\r\n" in head else GA_SNIPPET
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        fh.write(document[: anchor.end()] + snippet + document[anchor.end() :])
+    return True
+
+
+def sync_ga_tags() -> None:
+    pages = [INDEX_PATH, *sorted(REPORTS_DIR.glob("*.html"))]
+    tagged = 0
+    for page in pages:
+        try:
+            if ensure_ga_tag(page):
+                tagged += 1
+                print(f"[sync_primary_nav] Added GA tag to {page.name}.")
+        except OSError as exc:
+            # Never fail the build over analytics.
+            print(f"[sync_primary_nav] Could not tag {page.name}: {exc}")
+    if not tagged:
+        print("[sync_primary_nav] GA tag already present on all pages.")
+
+
 def main() -> int:
+    sync_ga_tags()
+
     try:
         nav = load_nav()
         left_nav = build_left_nav(nav)
